@@ -26,14 +26,14 @@ else if (jmlTf > bankTransferConfig.transfer.threshold)
 
 if (bankTransferConfig.lang == "en")
 {
-    Console.WriteLine("Transfer fee = " + jmlTf);
+    Console.WriteLine("Transfer fee = " + (totalTf-jmlTf));
     Console.WriteLine("Total Amount = " + totalTf);
     Console.WriteLine();
     Console.WriteLine("Select transfer method: ");
 }
 else if (bankTransferConfig.lang == "id")
 {
-    Console.WriteLine("Biaya transfer = " + jmlTf);
+    Console.WriteLine("Biaya transfer = " + (totalTf - jmlTf));
     Console.WriteLine("Total Biaya = " + totalTf);
     Console.WriteLine();
     Console.WriteLine("Pilih metode transfer: ");
